@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<section>
+    <div class="submittedArea"></div>
+    <form class="form">
+        <h2>Survey Form</h2>
+        <input type="text" name="name" placeholder="Your Name">
+        <br>
+        <br>
+        Favorite Language: <select name="favoriteLanguage" id="">
+            <option value="javascript" name="javascript">javascript</option>
+            <option value="php" name="php">php</option>
+        </select>
+        <br>
+        <br>
+        <textarea name="comment" id="" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <input type="submit" name="send">
+    </form>
+</section>
+
+<script src="socket.io/socket.io.js"></script>
+<script src="/script/main.js"></script>
+</body>
+</html>
